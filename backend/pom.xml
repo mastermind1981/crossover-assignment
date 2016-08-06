@@ -3,15 +3,17 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>backend</artifactId>
 	<parent>
-    		<groupId>com.crossover</groupId>
-    		<artifactId>crossover-assignment</artifactId>
-    		<version>0.0.1-SNAPSHOT</version>
-  	</parent>
+		<groupId>com.crossover</groupId>
+		<artifactId>crossover-assignment</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
 	<name>A backend system for Ecom</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
+		<spring-test-dbunit.version>1.2.1</spring-test-dbunit.version>
+		<dbunit.version>2.5.2</dbunit.version>
 	</properties>
 
 	<dependencies>
@@ -59,6 +61,19 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.4</version>
 		</dependency>
+
+		<!-- DBUnit -->
+		<dependency>
+			<groupId>com.github.springtestdbunit</groupId>
+			<artifactId>spring-test-dbunit</artifactId>
+			<version>${spring-test-dbunit.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.dbunit</groupId>
+			<artifactId>dbunit</artifactId>
+			<version>${dbunit.version}</version>
+		</dependency>
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>

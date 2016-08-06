@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<PROJECT code="1" address="test address" phone1="test phone 1"
+		phone2="test phone 2" />
+</dataset>
